@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://agilemodeling.com/essays/fdd.htm -->
+<html lang="en"><script type="module" src="chrome-extension://jdkknkkbebbapilgoeccciglkfbmbnfm/hook.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="created" content="Fri, 19 Apr 2013 14:45:47 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Feature Driven Development (FDD) and Agile Modeling</title>
+    <link rel="stylesheet" type="text/css" href="./Feature Driven Development (FDD) and Agile Modeling_files/globalnew.css">
+	<link rel="shortcut icon" href="http://agilemodeling.com/images/amfavicon.ico" type="image/x-icon">
+    
+	
+	
+  </head>
+
+<body bgcolor="White">
+
+<header>
+  <table border="0" width="100%" class="titlebox">
+  <tbody><tr>
+    <td width="7%">
+	<a href="http://agilemodeling.com/">
+	<img src="./Feature Driven Development (FDD) and Agile Modeling_files/logoAgileModeling.gif" alt="" border="0" align="right"></a></td>
+	
+    <td width="93%">
+		<p align="center" class="maintitle">Feature Driven Development (FDD) and Agile Modeling</p></td>
+	
+  </tr>
+  </tbody></table>
+</header>
+
+ 		<!-- Nav bar -->
+  		<nav>    
+  		<ul>
+			<li><a href="http://agilemodeling.com/">Home</a></li>
+			<li><a href="http://agilemodeling.com/essays/whereDoIStart.htm">Start Here</a> 
+				<ul>
+					<li><a href="http://www.agilemodeling.com/essays/introductionToAM.htm">An Introduction to Agile Modeling</a></li>
+					<li><a href="http://www.agilemodeling.com/essays/amdd.htm">Agile Model Driven Development (AMDD)</a></li>
+					<li><a href="http://www.agilemodeling.com/essays/bestPractices.htm">Agile Modeling Core Practices</a></li>
+					<li><a href="http://www.agilemodeling.com/faq.htm">Frequently Asked Questions (FAQ)</a></li>
+					<li><a href="http://www.agilemodeling.com/values.htm">Values of AM</a></li>
+					<li><a href="http://www.agilemodeling.com/principles.htm">Principles of AM</a></li>
+					<li><a href="http://www.agilemodeling.com/practices.htm">Practices of AM</a></li>
+				</ul>	
+			</li>  
+			<li><a href="http://agilemodeling.com/essays/bestPractices.htm">Core Practices</a>  
+			    <ul>
+					<li><a href="http://agilemodeling.com/essays/activeStakeholderParticipation.htm">Active Stakeholder Participation</a></li> 
+					<li><a href="http://agilemodeling.com/essays/agileModelingSession.htm">Agile Modeling Session</a></li> 
+					<li><a href="http://agilemodeling.com/essays/initialArchitectureModeling.htm">Architecture Envisioning</a></li>  
+					<li><a href="http://agilemodeling.com/essays/documentContinuously.htm">Document Continuously</a></li>  
+					<li><a href="http://agilemodeling.com/essays/documentLate.htm">Document Late</a></li> 
+					<li><a href="http://agilemodeling.com/essays/executableSpecifications.htm">Executable Specifications</a></li>
+					<li><a href="http://agilemodeling.com/essays/inclusiveModels.htm">Inclusive Tools and Techniques</a></li>
+					<li><a href="http://agilemodeling.com/essays/iterationModeling.htm">Iteration Modeling</a></li> 
+					<li><a href="http://agilemodeling.com/essays/barelyGoodEnough.html">Just Barely Good Enough(JBGE) artifacts</a></li>
+					<li><a href="http://agilemodeling.com/essays/modelAhead.htm">Look Ahead Modeling</a></li>
+					<li><a href="http://agilemodeling.com/essays/modelStorming.htm">Model Storming</a></li> 
+					<li><a href="http://agilemodeling.com/artifacts/">Multiple Models</a></li>  
+					<li><a href="http://agilemodeling.com/essays/prioritizedRequirements.htm">Prioritized Requirements</a></li> 
+					<li><a href="http://agilemodeling.com/essays/initialRequirementsModeling.htm">Requirements Envisioning</a></li> 
+					<li><a href="http://agilemodeling.com/essays/singleSourceInformation.htm">Single Source Information</a></li> 
+					<li><a href="http://agiledata.org/essays/tdd.html">Test-Driven Design (TDD)</a></li> 
+				</ul>
+			</li>				
+			<li><a href="http://agilemodeling.com/">Disciplines</a>  
+				<ul>
+					<li><a href="http://agilemodeling.com/essays/agileRequirements.htm">Requirements</a></li>  
+					<li><a href="http://agilemodeling.com/essays/agileAnalysis.htm">Analysis</a></li>  
+					<li><a href="http://agilemodeling.com/essays/agileDesign.htm">Design</a></li>  
+					<li><a href="http://agilemodeling.com/essays/agileArchitecture.htm">Architecture</a></li>  
+					<li><a href="http://agilemodeling.com/essays/agileDocumentation.htm">Documentation</a></li> 
+					<li><a href="http://agilemodeling.com/essays/enterpriseModelingAntiPatterns.htm">Enterprise Modeling</a></li>
+				</ul>
+			</li>
+			<li><a href="http://agilemodeling.com/">Artifacts</a>  
+  		 		<ul>            
+				   <li><a href="http://agilemodeling.com/artifacts">Agile Models Distilled</a></li>
+				   <li><a href="http://agilemodeling.com/style">Modeling Style</a></li>  
+				   <li><a href="http://agilemodeling.com/essays/agileDocumentation.htm">Agile Documentation</a></li> 
+				   <li><a href="http://www.agilemodeling.com/essays/umlDiagrams.htm">Introduction to UML 2.X</a> </li>
+		  		</ul>
+			</li>            
+		    <li><a href="http://agilemodeling.com/">Resources</a>        
+  		 		<ul>            
+		 		   <li><a href="https://www.projectmanagement.com/blogs/611075/Disciplined-Agile">Blog: Disciplined Agile</a></li>            		 		               
+  		 		   <li><a href="https://www.projectmanagement.com/blogs/578692/Disciplined-Agile-Applied">Blog: Disciplined Agile Applied</a></li>            
+		 		   <li><a href="http://agilemodeling.com/downloads.htm">Downloads</a></li>    <li><a href="http://agilemodeling.com/essays/">Site map</a></li>            
+		 		</ul>
+			</li>      
+			<li><a href="http://ambysoft.com/contactMe.html" target="_blank">Contact Me</a></li>  
+			  
+  		</ul>
+  		</nav>
+  		<!-- Nav bar -->
+
+		<!-- SiteSearch Google -->
+		<form method="get" action="http://www.google.com/custom">
+		<input type="hidden" name="domains" value="AgileData.org;AgileModeling.com;www.ambysoft.com;www.enterpriseunifiedprocess.com">
+		<input type="hidden" name="cof" value="L:http://AgileModeling.com/images/logoAgileModeling.gif;BGC:#FFFFFF;AH:center;GL:0;S:http://AgileModeling.com;AWFID:9f873e648db9a709;">
+		<input type="hidden" name="hl" value="en">
+		<input type="hidden" name="safe" value="active">
+		<input type="hidden" name="oe" value="ISO-8859-1">
+		<input type="hidden" name="ie" value="ISO-8859-1">
+		<input type="hidden" name="forid" value="1">
+		<input type="hidden" name="client" value="pub-1563172974921293">
+		<input type="hidden" name="sitesearch" value="AgileModeling.com">
+        <input type="text" name="q" size="31" maxlength="255" value="">
+		<input type="submit" name="sa" value="Search">
+		<!-- SiteSearch Google -->
+
+<!-- Ad -->
+	<p></p><div align="center">
+	<a href="http://ambysoft.com/ad/adRedirect.html"><img src="./Feature Driven Development (FDD) and Agile Modeling_files/bannerAd.png" alt="" border="1"></a>
+	</div><p></p>
+<!-- Ad -->
+
+	
+  <article>
+						
+						
+						<p>Feature-Driven Development (FDD) is 
+						a client-centric, architecture-centric, and pragmatic 
+						software process.  The term "client" in FDD is used to 
+						represent what Agile Modeling (AM) refers to as 
+						<a href="http://agilemodeling.com/essays/activeStakeholderParticipation.htm#Stakeholders">
+						project stakeholders</a> or
+						<a href="http://agilemodeling.com/essays/agileModelingXP.htm">
+						eXtreme Programming (XP)</a> calls customers.  FDD was 
+						first introduced to the world in 1999 via the book
+						<a href="http://www.amazon.com/exec/obidos/ASIN/013011510X/ambysoftinc/">
+						Java Modeling In Color with UML</a>, a combination of 
+						the software process followed by Jeff DeLuca's company 
+						and Peter Coad's concept of features. FDD was first 
+						applied on a 15 month, 50-person project for a large 
+						Singapore bank in 1997, which was immediately followed 
+						by a second, 18-month long 250-person project.  A more 
+						substantial description is published in the book 
+						<a href="http://www.amazon.com/exec/obidos/ASIN/0130676152/ambysoftinc/">
+						A Practical Guide to Feature-Driven Development</a> as 
+						well as the
+						<a href="http://www.featuredrivendevelopment.com/">
+						Feature Driven Development</a> web site.</p>
+						
+						
+						<p>As the name implies,
+						<a href="http://agilemodeling.com/artifacts/feature.htm">
+						features</a> are an important aspect of FDD.  A feature 
+						is a small, client-valued function expressed in the form 
+						<action><result><object>.  For example, "Calculate the 
+						total of a sale", "Validate the password of a user", and 
+						"Authorize the sales transaction of a customer".  
+						Features are to FDD as
+						<a href="http://agilemodeling.com/artifacts/systemUseCase.htm">
+						use cases</a> are to the
+						<a href="http://agilemodeling.com/essays/agileModelingRUP.htm">
+						Rational Unified Process (RUP)</a> and
+						<a href="http://agilemodeling.com/artifacts/userStory.htm">
+						user stories</a> are to
+						Scrum - they're a primary source of requirements and 
+						the primary input into your planning efforts.<p></p>
+						<p>As you see in <a href="http://agilemodeling.com/essays/fdd.htm#Figure1">
+						Figure 1</a> there are five main activities in FDD that 
+						are performed iteratively.  The first is Develop An 
+						Overall Model, the initial result being a high-level 
+						object model and notes.  At the start of a project your 
+						goal is to identify and understand the fundamentals of 
+						the domain that your system is addressing, and 
+						throughout the project you will flesh this model out to 
+						reflect what you're building.  The second step is Build 
+						A 
+						<a href="http://agilemodeling.com/artifacts/feature.htm#Figure1">Features List</a>, grouping them into 
+						<a href="http://agilemodeling.com/artifacts/feature.htm#Figure2FeatureSets">related sets and 
+						subject areas</a>. These first two steps map to the
+						<a href="http://agilemodeling.com/essays/amdd.htm#InitialModeling">
+						initial envisioning effort of AMDD</a> (see
+						<a href="http://agilemodeling.com/essays/fdd.htm#Figure2">Figure 2</a>).  Next you Plan By 
+						Feature, the end result being a development, the 
+						identification of class owners (more on this in a 
+						minute), and the identification of feature set owners.  
+						The majority of the effort on an FDD project, roughly 
+						75%, is comprised of the fourth and fifth steps: Design 
+						By Feature and Build By Feature.  These two activities 
+						are exactly what you'd expect, they include tasks such 
+						as detailed modeling, programming, testing, and 
+						packaging of the system.</p>
+						<p><b><a name="Figure1">Figure 1</a>.  
+						The FDD project lifecycle. </b></p>
+						<p align="center">
+						<img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/lifecycleFDD.gif"></p>
+						<p><b><a name="Figure2">Figure 2</a>. 
+						The lifecycle of AMDD.</b></p>
+						<p align="center">
+                        <map name="FPMap0">
+						<area href="http://agilemodeling.com/essays/initialRequirementsModeling.htm" shape="rect" coords="322, 12, 515, 143" target="_blank">
+						<area href="http://agilemodeling.com/essays/initialArchitectureModeling.htm" shape="rect" coords="609, 14, 804, 143" target="_blank">
+						<area href="http://agiledata.org/essays/tdd.html" shape="rect" coords="467, 421, 658, 532" target="_blank">
+						<area href="http://agilemodeling.com/essays/modelReviews.htm" shape="rect" coords="754, 293, 946, 426" target="_blank">
+						<area href="http://agilemodeling.com/essays/modelStorming.htm" shape="rect" coords="467, 321, 659, 381" target="_blank">
+						<area target="_blank" coords="467, 232, 659, 290" shape="rect" href="http://agilemodeling.com/essays/iterationModeling.htm">
+						</map>
+                        <img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/AMDD.gif" usemap="#FPMap0"></p>
+																		<table border="0" width="100%" id="table5">
+																			<tbody><tr>
+																				<td>
+						<p>An FDD project starts by performing 
+						the first three steps in the equivalent of the DAD's 
+						Inception phase or XP's "iteration 0", the goal being to 
+						identify the scope of the effort, the  
+						<a href="http://agilemodeling.com/essays/initialArchitectureModeling.htm">initial 
+						architecture</a>, and the initial high-level plan.  
+						Construction efforts occur in two-week (or less) 
+						iterations, similar to XP or DAD teams, with the team iteratively working 
+						through all five steps as needed.  As with other agile 
+						software development processes, systems are delivered 
+						incrementally by FDD teams.</p>
+						<p>There are six primary roles on an 
+						FDD project: Project Manager, Chief Architect, 
+						Development Manager, Chief Programmer, Class Owner, and 
+						Domain Expert.  An individual will take on one or more 
+						roles on a project as you would expect.  The concept of 
+						a class owner is where FDD differs from XP.  XP includes 
+						a practice called
+						
+						<a href="http://agilemodeling.com/practices.htm#CollectiveOwnership">
+						Collective Ownership</a> the idea of which is that any 
+						developer can update any artifact, including source 
+						code, as required.  FDD takes a different approach in 
+						that it assigns classes to individual developers, so if 
+						a feature requires changes to several classes then the 
+						owners of those classes must work together as a feature 
+						team to implement it.  Just like programming pairs will
+						
+						<a href="http://agilemodeling.com/essays/modelStorming.htm">
+						model storm</a> to think something through before they 
+						code it, so will feature teams.</p></td>
+																				<td width="119">
+					<b>
+																				<a href="http://www.amazon.com/exec/obidos/ASIN/0130676152/"><img src="./Feature Driven Development (FDD) and Agile Modeling_files/0130676152.01.MZZZZZZZ.jpg" alt="Practical Guide to FDD" border="0"></a></b></td>
+																			</tr>
+																		</tbody></table>
+						<p>FDD also defines a collection of 
+						supporting roles, including:</p>
+						<ul>
+							<li>Domain Manager</li>
+							<li>Release Manager</li>
+							<li>Language Guru</li>
+							<li>Build Engineer</li>
+							<li>Toolsmith</li>
+							<li>System Administrator</li>
+							<li>Tester</li>
+							<li>Deployer</li>
+							<li>Technical Writer</li>
+						</ul>
+						<p>FDD's five steps are supported by 
+						several practices.  The first is domain object 
+						modeling, the creation of a high-level class diagram and 
+						supporting artifacts that describes the problem domain.  
+						Developing by feature and individual class ownership are 
+						also good practices, as is having developers work 
+						together in feature teams.  Inspections are an important 
+						aspect of FDD.  FDD also 
+						insists on regular builds, similar to XP, and 
+						configuration management.  Finally, FDD promotes a best 
+						practice called reporting/visibility of results, similar 
+						to XP and AM's philosophy of
+						<a href="http://agilemodeling.com/principles.htm#OpenAndHonestCommunication">
+						open and honest communication</a>.</p>
+						<p>How would Agile Modeling (AM) be 
+						applied on an FDD project?  The principles and practices 
+						can be clearly applied to FDD's two modeling-oriented 
+						steps - develop an overall model and design by feature.  
+						The only apparent mismatch between the two processes is 
+						FDD's practice of class ownership and AM's practice of
+						<a href="http://agilemodeling.com/practices.htm#CollectiveOwnership">
+						collective ownership</a>, but I would argue that this 
+						isn't the case.  FDD's practice pertains to coding but 
+						does not to modeling, on a FDD project people work 
+						together in teams to model, along the lines of AM's 
+						model with others practice, and therefore several people 
+						will be working on your shared collection of modeling 
+						artifacts.</p>
+
+	       			
+
+<footer>
+  <hr size="1">	
+
+  <!-- Bottom advertising -->
+  <br>
+  <h2>Recommended Reading</h2>
+  <table border="0" width="100%">
+    <!-- DAD Book -->
+  <tbody><tr>
+    <td>
+  	 <a href="https://marketplace.pmi.org/Pages/ProductDetail.aspx?GMProduct=00101623401" target="_blank">
+  	 	<img src="./Feature Driven Development (FDD) and Agile Modeling_files/chooseWoW.jpg" alt="Choose Your WoW!" align="middle" height="150" border="1"></a>
+	</td>
+    <td>
+	This book, <a href="https://marketplace.pmi.org/Pages/ProductDetail.aspx?GMProduct=00101623401" target="_blank">
+	Choose Your WoW! A Disciplined Agile Delivery Handbook for Optimizing Your Way of Working</a>, 
+	is an indispensable guide for agile coaches and practitioners to identify what techniques
+	- including practices, strategies, and lifecycles - are effective in certain situations
+	and not as effective in others. This advice is based on proven experience from hundreds
+	of organizations facing similar situations to yours. Every team is unique and faces a
+	unique situation, therefore they must choose and evolve a way of working (WoW) that is effective for
+	them. <a href="https://marketplace.pmi.org/Pages/ProductDetail.aspx?GMProduct=00101623401" target="_blank">
+	Choose Your WoW!</a> describes how to do this effectively, whether they are just starting with agile/lean
+	or if they're already following Scrum, Kanban, SAFe, LeSS, Nexus, or other methods.
+	</td>
+  </tr>
+	
+	<!-- Object Primer -->
+  	<tr>
+	<td width="5%">
+	<a href="http://www.ambysoft.com/books/theObjectPrimer.html"><img src="./Feature Driven Development (FDD) and Agile Modeling_files/objectPrimer.jpg" alt="The Object Primer 3rd Edition: Agile Model Driven Development (AMDD) with UML 2"></a>
+	</td>
+    <td width="95%">
+	<a href="http://www.ambysoft.com/books/theObjectPrimer.html">The Object Primer 3rd Edition: Agile Model Driven 
+	Development with UML 2</a> is an important reference book for agile modelers, 
+	describing how to develop 35 <a href="http://agilemodeling.com/artifacts">types of agile 
+	models</a> including all 13  
+	<a href="http://agilemodeling.com/essays/umlDiagrams.htm">UML 2 diagrams</a>.  
+	Furthermore, this book describes the fundamental programming and testing techniques
+	for successful agile solution delivery.  The book also shows how to move from your 
+	agile models to source code, how to succeed at implementation techniques such as 
+	<a href="http://agiledata.org/essays/databaseRefactoring.html">refactoring</a> and  
+	<a href="http://agiledata.org/essays/tdd.html">test-driven development(TDD)</a>.  
+	The Object Primer also includes a chapter overviewing the critical database development techniques (<a href="http://agiledata.org/essays/databaseRefactoring.html">database refactoring</a>,  
+	<a href="http://agiledata.org/essays/mappingObjects.html">object/relational mapping</a>,  
+	<a href="http://agiledata.org/essays/legacyDatabases.html">legacy analysis</a>, and 
+	database access coding) from my award-winning 
+	<a href="http://www.ambysoft.com/books/agileDatabaseTechniques.html">Agile Database Techniques</a>book.</td>
+	</tr>
+  </tbody></table>						
+						
+						
+  <!-- Bottom logo bar -->
+  <br>  <hr size="1">	
+  <p>
+  <a href="https://pmi.org/disciplined-agile" target="_blank"><img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/buttonPMIDA.jpg" alt="The PMI Disciplined Agile (DA) tool kit"></a>
+  <a href="http://agilemodeling.com/" target="_blank"> <img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/buttonAM.gif" alt="Agile Modeling: Practices for Scaling Agile"></a>
+  <a href="http://agiledata.org/" target="_blank"> <img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/buttonAD.gif" alt="Agile Data: Practices for Scaling Agile"></a>
+  <a href="http://enterpriseunifiedprocess.com/" target="_blank"><img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/buttonEUP.gif" alt="EnterpriseUP: Agility at Scale"></a>
+  <a href="http://ambysoft.com/" target="_blank"><img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/buttonAmbysoft.gif" alt="Ambysoft Inc."></a>
+  <a href="http://twitter.com/scottwambler" target="_blank"><img border="0" src="./Feature Driven Development (FDD) and Agile Modeling_files/buttonSWATwitter.gif" alt="Follow @scottwambler on Twitter!"></a></p>
+
+
+  <!-- Copyright Notice -->
+  <hr size="1">		
+  <table width="100%">
+	<tbody><tr>
+		<td><p>
+		<a href="http://www.ambysoft.com/licensing.html">Copyright</a> 2005-2022 
+		<a href="http://www.ambysoft.com/scottAmbler.html">Scott W. Ambler</a>
+		</p></td>
+		<td><p align="right">
+		This site owned by <a href="http://www.ambysoft.com/">Ambysoft Inc.</a>
+		</p></td>
+	</tr>
+  </tbody></table>
+
+
+
+				
+</footer>
+
+
+</object></result></action></p></article></form></body></html>

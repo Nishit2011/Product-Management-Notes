@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.conceptdraw.com/How-To-Guide/pert-diagram -->
+<html><script type="module" src="chrome-extension://jdkknkkbebbapilgoeccciglkfbmbnfm/hook.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+       <!-- <base href=""> -->
+        <title>Program Evaluation and Review Technique (PERT)</title>
+        <meta name="description" content="PERT Diagram is a more realistic approach of a project&#39;s time estimate analysis. After PERT chart was constructed user can discover the shortest possible duration for entire project timescale. The project timeline is the longest chain that might be taken with connected tasks on the PERT Diagram. Completion of serial tasks need to be accomplished in a presented order. At a project timeline can be independent tasks that not linked with main sequence they are called parallel tasks. PERT diagram is more suitable for Critical Path Analysis than Gantt chart for the reason that it undoubtedly better determine task dependencies. Project managers customarily utilize both methodologies.">
+        <meta name="keywords" content="Program Evaluation and Review Technique, PERT, Cross-platform Capability">
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://www.conceptdraw.com/How-To-Guide/pert-diagram">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="/How-To-Guide/styles/layout.css"> -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Program Evaluation and Review Technique (PERT)">
+        <meta property="og:description" content="PERT Diagram is a more realistic approach of a project&#39;s time estimate analysis. After PERT chart was constructed user can discover the shortest possible duration for entire project timescale. The project timeline is the longest chain that might be taken with connected tasks on the PERT Diagram. Completion of serial tasks need to be accomplished in a presented order. At a project timeline can be independent tasks that not linked with main sequence they are called parallel tasks. PERT diagram is more suitable for Critical Path Analysis than Gantt chart for the reason that it undoubtedly better determine task dependencies. Project managers customarily utilize both methodologies.">
+        <meta property="og:url" content="https://www.conceptdraw.com/How-To-Guide/pert-diagram">
+        <meta property="og:site_name" content="https://www.conceptdraw.com">
+                    <meta property="og:image" content="/How-To-Guide/picture/pert-diagram.png">
+        
+    </head>
+    <body id="home">
+
+
+    
+    <style>
+
+
+        @font-face {
+            font-family: 'open_sans';
+            font-weight: 400;
+            font-style: normal;
+            font-display: fallback;
+
+         /*   src: url('/styles/fonts/OpenSans-Regular-webfont.eot');
+            src: url('/styles/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Regular-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+            */
+        }
+      /*  @font-face {
+            font-family: 'open_sans';
+            font-weight: 600;
+            font-style: normal;
+
+            src: url('/styles/fonts/OpenSans-Semibold-webfont.eot');
+            src: url('/styles/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+        }
+        */
+        html, body
+        {
+            width: 100%;
+            margin: 0;
+            overflow-y: auto;
+            font-size: 16px;
+
+        }
+        body {
+            font-size: 16px;
+            line-height: 1.44;
+            font-family: open_sans, Helvetica, Arial,"Nimbus Sans L", sans-serif !important;
+            /*background: #DADAE3; */
+            padding: 0 1em 1em 1em;
+        }
+
+
+        body#home{
+            padding:0 !important;
+            background: white;
+        }
+
+        a{
+            color: #0071bc;
+            text-decoration: none;
+
+        }
+
+        a:hover{
+            color: #134868;
+            border-bottom-color: #0071bc;
+            background: #fbfbc8;
+        }
+
+
+
+        /********** Main Page Styles ***************/
+
+        .s_mt_10{margin-top: 10px;}
+        .s_mt_20{margin-top: 20px;}
+        .s_mt_50{margin-top: 50px;}
+        .s_mt_70{margin-top: 70px;}
+        .s_mt_100{margin-top: 100px;}
+        .s_mb_10{margin-bottom: 10px;}
+        .s_mb_20{margin-bottom: 20px;}
+        .s_mb_50{margin-bottom: 50px;}
+        .s_mb_70{margin-bottom: 70px;}
+        .s_mb_100{margin-bottom: 100px;}
+
+        strong{ font-weight: normal;}
+        .center{margin-left: auto; margin-right: auto;}
+        .right{display: block; float: right !important;}
+        .left{display: block; float: left !important;}
+
+        .grid_w {display: block; float: left;width: 100%;text-align: center;}
+        .grid_2{width: 140px;}
+        /********************/
+        .wrapper{
+            text-align: center;
+        }
+        .word1{
+            font-size: 18px;
+            color: #000 !important;
+            font-weight: 100;
+        }
+        .word2{
+            font-size: 18px;
+            color: #000 !important;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        p{margin: 10px 0;}
+        /* p > b {font-weight: 600;color: #000;font-size: 1.5em;} */
+        .wrapper img{
+            padding: 20px 0;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+        }
+        .columns_2 ul, .columns_2 ol {column-count: 2;}
+        .centerCol img{max-width: 100%;}
+        .centerCol td img{min-width: 50px;}
+        .centerCol ul li img, .centerCol ol li img {
+            /* padding: 0; */
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            display: inline;
+        }
+        .centerCol ul{
+            padding-left: 15px;
+            list-style: none;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .centerCol ul li:before{
+            content: "· ";
+            margin-right: 15px;
+        }
+        .centerCol ul li{
+            list-style: inherit;
+            padding: 5px 0 10px 0;
+            text-align: left;
+            text-indent: -22px;
+        }
+        ul li > ul{margin-top: 15px;}
+        ul li > ul li{
+            line-height: 1.54;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .centerCol ol{
+            padding-left: 30px;
+        }
+        .centerCol ol li{padding: 5px 0 10px 20px; line-height: 1.54;}
+        .how-to .content{
+            max-width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .leftCol, .rightCol, .centerCol{
+            display: block;
+            text-align: left;
+        }
+
+        .leftCol{
+            width: 200px;
+            padding: 0 40px;
+            float: left;
+            font-size: 15px;
+        }
+        .rightCol {
+            width: 180px;
+            padding: 0 40px;
+            text-align: center;
+            float: right;
+        }
+        .centerCol{
+            padding: 0 4%;
+            margin-bottom: 150px;
+            width: calc(100% - 260px - 280px - 8%);
+            float: right;
+        }
+        .centerCol h1{
+            font-size: 30px;
+            line-height: 1.33;
+            font-weight: 100;
+            margin-top: 15px;
+        }
+        .leftCol h5{
+            font-size: 12px;
+            color: #555555;
+            line-height: 1.5;
+            font-weight:normal;
+        }
+        .rightCol h2, .rightCol h3, .rightCol h4,.rightCol h5 {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.25;
+            text-align: left;
+            color: #555555;
+            display: block;
+            float: left;
+        }
+        .rightCol h5{font-weight: 100;text-align: center;width: 180px;}
+
+        .leftCol h5{display: none;}
+        .leftCol ul{
+            color: #009ae8;
+            padding-left: 0;
+            list-style: none;
+            max-width: 200px;
+        }
+        .leftCol ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .rightCol ul{
+            font-size: 12px;
+            line-height: 1.25;
+            text-align: left;
+            color: #555555;
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 50px;
+            max-width: 150px;
+            float: right;
+            display: block;
+        }
+        .rightCol ul li {
+            list-style: inherit;
+            padding: 5px 0;
+            text-align: left;
+            text-indent: -22px;
+        }
+
+        .rightCol ul li:before {
+            content: "· ";
+            font-weight: 600;
+            font-size: 20px;
+            margin-right: 10px;
+
+        }
+        .centerCol h2{  font-size: 20px;  font-weight: 600;  line-height: 1.5;  color: #000000; margin-top: 40px;margin-bottom: 20px;}
+        .centerCol a.button{
+            border: 1px solid #009ae8;
+            border-radius: 3px;
+            padding: 8px 10px;
+            background-color: #fff;
+            color: #009ae8;
+            display: block;
+            float: left;
+            width: 120px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .centerCol a.button.now{display: inline;width: 200px;margin-right: 10px;}
+        .rightCol a.button{
+            border: 1px solid #009ae8;
+            border-radius: 3px;
+            padding: 8px 10px;
+            background-color: #fff;
+            color: #009ae8;
+            display: block;
+            float: left;
+            width: 160px;
+        }
+        .centerCol br,
+        .rightCol br,
+        .rightCol hr{display: none;}
+
+        .button{
+            border-radius: 3px;
+            padding: 8px 22px;
+            letter-spacing: 1px;
+        }
+        .noltrspcng{letter-spacing: normal;}
+        .rightCol a.button.dark,.centerCol a.button.dark{background-color: #009ae8; color: #fff;}
+        .centerCol a.button.dark.buy{background-color: darkred; color: #fff;border: 1px solid darkred;}
+        .button.light{background-color: #fff; color: #009ae8;}
+        .txtBig{text-transform: uppercase; font-weight: 600;}
+
+        .border_blr{border: 1px solid #009ae8; border-radius: 3px;}
+        .rightCol table tr td{padding:0 !important;margin: 0 !important;}
+        .rightCol img{ max-width: 170px;}
+
+        /******images videos****/
+        .samples_block {
+            float: left;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .sample {
+            font-size: 10px;
+            display: inline;
+            float: left;
+            width: 10em;
+            margin-right: 55px;
+        }
+        .sample img {
+            float: left;
+            overflow: hidden;
+            max-width: 125px;
+            max-height: 94px;
+            margin: 0 auto 7px 0;
+            padding: 0;
+            border: 4px solid #fff;
+            border-radius: 6px;
+            box-shadow: 0 1px 5px rgba(0,0,0,.75);
+        }
+
+        pre, i {display: block;width: 95%;overflow: hidden;word-wrap: anywhere;}
+
+        #SA_ {margin-top: 1em;  display: block;  float: left;}
+        #SA_ div {text-align: left;}
+        #SA_ h3{text-align: left; color: #009ae8; font-size: 19px;font-weight: 600;}
+        #SA_ h4{text-align: center; color: #505050; font-size: 23px;margin-top: 60px;margin-bottom: 30px;}
+        #SA_ br {display: inline;}
+        .rltdslt{color: #555555; font-size: 12px; text-align: left;padding-left: 10px;}
+        .pic{font-size: .9em;color: #555555;text-align: center !important;}
+
+        .vlink{width: 100%;display: block;margin-top: 20px;}
+        .gtitle{color: #555555; font-size: 12px;text-align: center;margin-top: 10px;display: block;float: left;}
+        .gvideo{display: inline;
+            float: left;
+            width: 100%;
+            border: 1px solid silver;
+            border-radius: 5px;}
+        #see_also {
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block !important;
+            overflow: hidden;
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding-bottom: 2em;
+            background: #eee;
+            -webkit-column-span: all;
+            -moz-column-span: all;
+            column-span: all;
+        }
+        .multy-col-list-wrapper::before {
+            font-size: 13px;
+            line-height: 24px;
+            display: block;
+            height: 40px;
+            padding-bottom: 10px;
+            content: 'SEE ALSO';
+            text-align: center;
+            color: #000;
+            font-weight: 700;
+        }
+        .multy-col-list-wrapper ul {
+            column-gap: 45px;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            column-count: 3;
+            padding-left: 10px;
+        }
+        .multy-col-list-wrapper ul li {list-style: none;overflow: hidden;}
+        .multy-col-list-wrapper ul li a {
+            font-size: 12px;
+            line-height: 25px;
+            color: #007aff;
+            font-family: sans-serif !important;
+        }
+
+        @media only screen and (max-width: 1020px) {
+            .rightCol{float: left;}
+            .leftCol{float: none;}
+            .centerCol{float: right;width: calc(100% - 280px - 8%);}
+            .rightCol .s_mb_70 { margin-bottom: 20px; }
+            .leftCol ul{display: block;  float: left;}
+            .leftCol h5{display: block;  float: left;  margin-top: 30px; margin-bottom: 0;text-align: center; width: 100%; margin-left: -15px;}
+            .centerCol .rltdslt a.button {width: 35%;display: block;}
+            .centerCol{font-size: 1.1em;}
+        }
+        @media only screen and (max-width: 650px) {
+            .rightCol{display: none;}
+            .leftCol{display: none;}
+            .centerCol{float: none;width: 90%; padding: 0 5%; font-size: 1.3em;}
+            .grid_w {width: 98%;}
+            .centerCol h1 {font-size: 1.7em;}
+            .centerCol h2 {font-size: 1.5em;}
+            #SA_ h3 {font-size: 1.3em;}
+            .multy-col-list-wrapper ul {column-count: 1;}
+        }
+
+        /* top menu styles*/
+   /*     @font-face {
+            font-family: 'open_sans_light';
+            font-weight: 200;
+            font-style: normal;
+
+            src: url('/styles/fonts/OpenSans-Light-webfont.eot');
+            src: url('/styles/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Light-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Light-webfont.svg#open_sansLight') format('svg');
+        }
+        @font-face {
+            font-family: 'open_sans_regular';
+            font-weight: 400;
+            font-style: normal;
+
+            src: url('/styles/fonts/OpenSans-Regular-webfont.eot');
+            src: url('/styles/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Regular-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+        }
+        @font-face {
+            font-family: 'open_sans_semibold';
+            font-weight: 600;
+            font-style: normal;
+
+            src: url('/styles/fonts/OpenSans-Semibold-webfont.eot');
+            src: url('/styles/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+        }
+        @font-face {
+            font-family: 'open_sans_ExtraBold';
+            font-weight: 600;
+            font-style: normal;
+
+            src: url('/styles/fonts/OpenSans-ExtraBold-webfont.eot');
+            src: url('/styles/fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-ExtraBold-webfont.svg#open_sansExtraBold') format('svg');
+        }
+*/
+
+        body {
+            margin: 0;
+        }
+        .menu {
+            font-size: 10px;
+            width: 100%;
+            position: relative;
+            height: 40px;
+            background-color: #fff;
+            border-bottom: 1px solid silver;
+        }
+        .menu * ,
+        .menu-full *,
+        .profile * {
+            text-decoration: none;
+            font-family: open_sans_regular, 'Open Sans', open_sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        .menu, .menu div,
+        .menu-full, .menu-full div,
+        .profile, .profile div{
+            float: none;
+        }
+        .menu-full > .left > .row > .col a {
+            font-family: open_sans_light, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        }
+        .menu a,
+        .menu-full a,
+        .profile a {
+            border-bottom: none 0;
+        }
+        .menu > .menu-left,
+        .menu > .menu-center,
+        .menu > .menu-right {
+            display: inline-block;
+            position: absolute;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .menu > .menu-left {
+            text-align: left;
+            left: 0;
+            right: auto;
+            z-index: 100000000;
+        }
+        .menu > .menu-center {
+            text-align: center;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 50000000;
+        }
+        .menu > .menu-right {
+            text-align: right;
+            right: 0;
+            left: auto;
+            z-index: 100000000;
+        }
+        .menu > .menu-left a,
+        .menu > .menu-center a,
+        .menu > .menu-right a {
+            margin: 2em;
+        }
+        .menu > .menu-left > .logo > a,
+        .menu > .menu-right a {
+            color: #e8594d;
+        }
+        .menu > .menu-left > .logo > a:hover {
+            text-decoration: none;
+        }
+        .menu > .menu-left > .logo > a {
+            font-family: open_sans_semibold, open_sans_regular, open_sans, 'Open Sans', sans-serif;
+        }
+
+
+        .menu > .menu-center > a:nth-last-child(2) {
+            margin-left: .75em;
+        }
+
+
+        .menu > .menu-center > a {
+            color:  #4a4a4a;
+            line-height: 32px;
+            border-top: 4px solid transparent;
+            height: 40px;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100px;
+            margin: 0 2em;
+
+        }
+
+
+        .menu > .menu-center > a:hover {
+            border-top: 4px solid  #e8594d;
+            text-decoration: none;
+        }
+
+
+        .menu > .menu-right div.signin,
+        .menu > .menu-right div.search,
+        .menu > .menu-right > .username {
+            float: right;
+        }
+        .menu > .menu-right > .username {
+            width: 240px;
+            text-overflow: ellipsis;
+
+        }
+        .menu > .menu-right > .username > a {
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        div.search:hover, div.search:hover * {
+            cursor: pointer;
+        }
+
+        .menu > .menu-right div.search input[type=text] {
+            border: none;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #e8594d;
+            font-size: 14px;
+            height: 32px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 2em;
+            padding-left: 3em;
+            border: 1px solid transparent;
+            -webkit-appearance: none;
+        }
+        .menu > .menu-right div.search input[type=text]:-webkit-autofill:focus{
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+            -webkit-text-fill-color: #e8594d;
+            background-color: white !important;
+
+        }
+        .menu > .menu-right div.search input[type=text]:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+            -webkit-text-fill-color: #e8594d;
+            background-color: white !important;
+        }
+        .menu > .menu-right div.search input[type=text]:focus{
+            outline: none;
+            border: 1px solid #e8594d;
+            cursor: auto;
+        }
+
+        .menu > .menu-right div.search input[type=text]::-webkit-input-placeholder {
+            color: #e8594d;
+        }
+
+        .menu > .menu-right div.search input[type=text]:-moz-placeholder { /* Firefox 18- */
+            color: #e8594d;
+        }
+
+        .menu > .menu-right div.search input[type=text]::-moz-placeholder {  /* Firefox 19+ */
+            color: #e8594d;
+        }
+
+        .menu > .menu-right div.search input[type=text]:-ms-input-placeholder {
+            color: #e8594d;
+        }
+        .menu > .menu-right div.search {
+            height: 32px;
+            margin-left: 2em;
+            background: url(/include_2015/imgs/Search_top.png) no-repeat .8em;
+            background-size: 17px;
+            margin-right: 0;
+            margin-top: .25em;
+            line-height: 32px;
+        }
+        .menu > .menu-right a {
+            font-family: open_sans_semibold, open_sans_regular, open_sans, 'Open Sans', sans-serif;
+        }
+        .menu > .menu-right > .username > a {
+            font-family: open_sans_regular, open_sans, 'Open Sans', sans-serif;
+            padding: 0 20px;
+            -webkit-background-size: 20px auto;
+            background-size: 20px auto;
+            line-height: 40px;
+            height: 40px;
+            /*box-sizing: border-box;*/
+            margin: 0;
+            display: block;
+            text-align: center;
+            position: relative;
+            white-space: nowrap;
+        }
+        .menu > .menu-right > .username > a:hover {
+            text-decoration: none;
+        }
+        .menu > .menu-right > .username > a > img {
+            width: 15px;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            vertical-align: text-top;
+            margin-right: 1.5em;
+        }
+        .menu > .menu-right > .username > a.active {
+            background-color: #d8d8d8;
+        }
+        .menu > .menu-right.active {
+            position: fixed;
+            z-index: 900000000;
+        }
+        /*.menu > .menu-right.active .username{*/
+        /*width: auto;*/
+        /*}*/
+        .menu > .menu-right.active div.search{
+            display: none;
+        }
+        .menu > .menu-right.active > .username > a > .close {
+            display: block;
+        }
+        .menu > .menu-right > .username > a > .close {
+            display: none;
+            height: 32px;
+            width: 32px;
+            background: url(/include_2015/imgs/CloseGrey.png) no-repeat center;
+            background-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: .5em;
+            left: auto;
+            margin: auto;
+        }
+        .menu > .menu-left > .burger {
+            background: url(/include_2015/imgs/Icon.png) no-repeat center;
+            background-size: 25px 14px;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            float: left;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .menu > .menu-left > .logo {
+            display: inline-block;
+        }
+        .menu > .menu-right div.search input[type=text]:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+        span.search-clear {
+            color: transparent;
+            font-family: open_sans_light, 'Open Sans', sans-serif;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            left: -25px;
+            font-size: 12pt;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        }
+        .menu > .menu-right .search input[type=text]:focus + span {
+            color: #e8594d;
+            cursor: pointer;
+        }
+        @media only screen and (max-width:1410px) {
+            .menu > .menu-right > .username {
+                width: 190px;
+
+            }
+            .menu > .menu-right > .username > a {
+                width: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 1890px) {
+
+
+            .menu > .menu-center > a:last-child {
+                /*margin-left: 0;*/
+                /*text-align: start;*/
+                width: 125px;
+            }
+            .menu > .menu-center > a{
+                margin: 0;
+                padding: 0 1.5em;
+                width: auto;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 1630px) {
+            .menu > .menu-center {
+                left: 30%;
+                right: auto;
+            }
+
+            .menu > .menu-right div.search input[type=text],
+            .menu > .menu-right div.search {
+                width: 125px;
+            }
+
+            span.search-clear {
+                left: -12px;
+                top: -32px;
+            }
+        }
+        @media only screen and (max-width:1340px) {
+            .menu > .menu-center {
+                left: 20%;
+                right: auto;
+            }
+        }
+        @media only screen and (max-width:1166px) {
+            .menu > .menu-center {
+                display: none;
+            }
+            .menu > .menu-right div.search,
+            .menu > .menu-right div.search input[type=text] {
+                width: 160px;
+            }
+        }
+        @media only screen and (max-width:570px) {
+            .menu > .menu-right div.search,
+            .menu > .menu-right div.search input[type=text] {
+                display: none;
+            }
+            .menu-full > .left > .row > .col > .title, .menu-full > .left > .row > .col > .title a {
+                margin-top: 24px;
+            }
+        }
+        @media only screen and (max-width:400px) {
+            .menu > .menu-right > .username > a {
+                color: transparent;
+                font-size: 0;
+                vertical-align: middle;
+                padding: 0;
+                background-position: center;
+                text-align: right;
+                width: 90%;
+            }
+            .menu > .menu-right div.search{
+                display: none;
+            }
+            .menu > .menu-right > .username > a > img {
+                vertical-align: middle;
+            }
+
+        }
+        @media only screen and (max-width:200px) {
+            .menu > .menu-left > .logo {
+                display: none;
+            }
+
+        }
+
+
+        /****************/
+        .menu-full {
+            font-size: 10px;
+            display: none;
+            background-color: rgba(86, 86, 86, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            z-index: 900000000;
+            /*height: 100vh;*/
+            height: 100vh;
+            overflow: auto;
+        }
+        .menu-full > .top {
+            margin-bottom: 2em;
+        }
+        .menu-full > .top > .logo > a {
+            font-size: 14px;
+            font-family: open_sans_semibold, open_sans, 'Open Sans', sans-serif;
+            color: #fff;
+            line-height: 32px;
+        }
+        .menu-full > .top > .logo > a:hover {
+            text-decoration: none;
+        }
+        .menu-full > .top > * {
+            display: inline-block;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .menu-full > .top > .close {
+            height: 32px;
+            width: 32px;
+            margin-right: 2.25em;
+            margin-left: 1.5em;
+            background: url(/include_2015/imgs/Close.png) no-repeat center;
+            background-size: 20px;
+            float: left;
+            cursor: pointer;
+
+        }
+        .menu-full > .left {
+            width: 70%;
+            width: calc(75% - 2em);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 2em;
+            float: left;
+        }
+        .menu-full > .left > .row {
+            display: block;
+            margin-bottom: 6em;
+        }
+        .menu-full > .left > .row > .col {
+            padding-left: 5em;
+            display: inline-block;
+            vertical-align: top;
+            width: 24%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .menu-full > .left > .row > .col a {
+            color: #fff;
+            font-size: 14px;
+            line-height: 2.4;
+            padding: .15em 0;
+            display: inline-block;
+        }
+        .menu-full > .left > .row > .col a:hover {
+            text-decoration: none;
+        }
+        .menu-full > .left > .row > .col > .item {
+            border-bottom: 1px solid #acacac;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .menu-full > .left > .row > .col > .item:first-child {
+            border-bottom: none;
+        }
+        .menu-full > .left > .row > .col > .item:hover::after {
+            content: '';
+            position: absolute;
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 6px solid #acacac;
+        }
+        .menu-full > .left > .row > .col > .title,
+        .menu-full > .left > .row > .col > .title a{
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 24px;
+            font-family:  open_sans_regular,open_sans, 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 36px;
+            cursor: default;
+            width: auto;
+            padding: 0;
+        }
+        .menu-full > .left > .row > .col > .title a{
+            margin-bottom: 0;
+            border-bottom: 1px solid transparent;
+            line-height: 24px;
+        }
+        .menu-full {
+            vertical-align: top;
+        }
+        .menu-full > div.right {
+            display: inline-block;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 25%;
+            border-left: 1px solid #acacac;
+            vertical-align: top;
+            padding-left: 5%;
+            padding-top: 0;
+            height: 75%;
+            height: calc(100% - 120px);
+            max-height: 859px;
+            float: none !important;
+            right: 0;
+            margin-top: 0;
+            text-align: left;
+        }
+        .menu-full > .right .title,
+        .menu-full > .right .top {
+            padding: 0;
+            margin-bottom: 0;
+            line-height: 18px;
+            width: auto;
+        }
+        .menu-full > .right .title a {
+            font-size: 18px;
+            /*font-weight: 400 !important;*/
+            /*font-family: open_sans_regular,open_sans,  'Open Sans',sans-serif;*/
+            line-height: 48px;
+            color: #fff;
+            height: 48px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-right: .2em;
+        }
+        .menu-full > .right .title a:hover,
+        .menu-full > .left > .row > .col > .title a:hover{
+            border-bottom: 1px solid #acacac;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .menu_overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 80000000;
+            background-color: #000;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        @media only screen and (max-width:1024px) {
+            .menu-full > .left > .row > .col a{
+                line-height: 1.45;
+                padding: .65em 0;
+            }
+        }
+        @media only screen and (max-width:1000px) {
+            .menu-full > .left > .row > .col {
+                width: 49%;
+            }
+            .menu-full > .left > .row > .col {
+                margin-bottom: 2em;
+            }
+        }
+        @media only screen and (max-width:600px) {
+            .menu-full > .left > .row > .col {
+                width: 100%;
+            }
+            .menu-full > .left > .row > .col {
+                margin-bottom: 2em;
+            }
+        }
+        @media only screen and (max-width:550px) {
+            .menu-full > .top > .logo {
+                display: none;
+            }
+            .columns_2 ul, .columns_2 ol{column-count: 1;line-height: 1em;}
+        }
+        @media only screen and (max-width:500px) {
+            .menu-full > .left,
+            .menu-full > div.right {
+                display: block;
+                float: none !important;
+            }
+            .menu-full > div.right {
+                border-left: none;
+                width: 100%;
+                padding-left: 7em;
+                text-align: left;
+            }
+
+        }
+
+        /* styles for footer*/
+
+        #footer{
+            float: left;
+            font-family: open_sans, open_sans_regular, 'Open Sans', "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important;
+            font-size: 100%;
+            padding: 4.375rem;
+            width: 100%;
+            height: 12.25rem;
+            box-sizing: border-box;
+            background: #FFF;
+           /* margin: 100px 0 0 0; */
+            text-align: left;
+            line-height: 1.42;
+            border-top: 1px solid #9C9C9C;
+
+
+
+        }
+
+        #footer > div{
+            width: 50%;
+        }
+        #footer p
+        {
+            font-weight: normal;
+            font-size: 1.33em;
+            line-height: 1.33;
+            padding-bottom: 3px;
+            margin: 0;
+            padding-top: 1px;
+        }
+        .footer_links_left
+        {
+            float:left;
+            font-size: .75rem;
+            font-weight: 600;
+            width: 50%;
+        }
+        .footer_links_left p {
+            font-size: 1.33em !important;
+        }
+        .footer_links_right
+        {
+            float: right;
+            font-size: .65em;
+            color: rgb(153, 153, 153);
+            text-align: right;
+            width: 50%;
+        }
+
+        .footer_links_right p{
+            font-size: .75rem !important;
+            margin: .65rem 0 0 0 !important;
+        }
+
+        a.foo_links {
+            display: inline;
+            color: #3fa9f5;
+            font-size: .745rem;
+            line-height: 1.31;
+            text-decoration: none;
+            border: none;
+        }
+        .footer_links_right .foo_links:hover {
+            color: #21587F;
+        }
+        .foo_links:after{
+            content: "  |  ";
+            padding: 0.3em;
+        }
+
+        .footer_links_right a:last-of-type:after {
+            content: "";
+            padding: 0;
+        }
+        @media only screen and (max-width: 820px){
+            div#footer > div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1em;
+            }
+        }
+        @media only screen and (max-width: 650px){
+            #footer{
+                padding: 2.35rem 0;
+            }
+        }
+        @media only screen and (max-width: 570px){
+            .foo_links:after {
+                padding: 0.1em;
+            }
+        }
+        @media only screen and (max-height: 890px){
+            #footer {
+                position: initial;
+
+            }
+        }
+    </style>
+
+
+    <div class="menu">
+        <div class="menu-left">
+            <div class="logo"><a href="https://www.conceptdraw.com/solution-park">ConceptDraw Solutions</a></div>
+        </div>
+       <!-- <div class="menu-center">
+            <a href="/products">Products</a>
+            <a href="/solution-park">Solutions</a>
+            <a href="/samples">Samples</a>
+            <a href="https://my.conceptdraw.com/buy/">Buy</a>
+        </div> -->
+        <!-- <div class="menu-right">
+
+                            <div class="signin"><a href="https://my.conceptdraw.com/registration/login.php">Sign In</a></div>
+                        <div class="search">
+                <form method="get" action="/search.php" id="searchbox_000893448112670316043:ckg3jdpoqts">
+                    <input type="hidden" name="cx" value="000893448112670316043:ckg3jdpoqts">
+                    <input type="hidden" name="cof" value="FORID:11">
+                    <input type="hidden" name="sa" value="Search">
+                    <input type="text" autocomplete="on" placeholder="Search" name="q" id="header_search" href="" onClick="javascript:if(this.phSet)this.value=''" onkeydown="javascript:if ( event.keyCode == 27 ) this.value=''"/>
+                    <span class="search-clear">&#10005;</span>
+                </form>
+
+            </div>
+        </div> -->
+    </div>
+    
+    
+    <div class="wrapper how-to">
+        <div class="content">
+
+
+
+            <div class="rightCol">
+                <h5>Made with</h5>
+
+                <div class="s_mb_20 grid_w">
+                                            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M49.48 13.4L61.2 29.26H17.9L29.63 13.4h19.85zm-1.8-2.43L39.56 0l-8.12 10.97h16.24zM32.9 73.14h13.42V31.7h-13.4v41.44zm-2.43 0H17V31.7h13.47v41.44zm18.3 0H62.1V31.7H48.76v41.44z" fill="#000" fill-rule="evenodd"></path>
+                            </svg>                        <div class="word1">ConceptDraw</div> <div class="word2">DIAGRAM 15</div>                </div>
+                <div class="grid_w s_mb_70"><a href="https://my.conceptdraw.com/account/downloads.php" class="button dark">Download ConceptDraw Trial</a></div>
+
+                
+            </div>
+            <div class="centerCol">
+                <h1>Program Evaluation and Review Technique <br>(PERT) with ConceptDraw DIAGRAM </h1>
+
+                <table cellspacing="20" cellpadding="0" bordercolor="#ffffff" border="0" bgcolor="#ffffff">
+<tbody><tr>
+<td valign="top">
+<!-- Main Text -->
+
+
+
+
+
+<p>
+PERT method (<strong>Program Evaluation and Review Technique</strong>) is developed by the Ministry of Defense of the USA in 1958 in the framework of the project Polaris. PERT diagram is one of the tools for project management. With its help it is possible to analyze the time which is necessary for project execution and the consequence of tasks which involved into the project. The main advantage of such diagram type over the other diagram types is the possibility of calculation of the project fulfillment critical path that is the consequence of tasks which has the minimal float for execution and on which the total time for the whole project execution depends. If the task on the critical path is delayed than the execution of the whole project is delayed. There for it is important to calculate the critical path of the whole project execution and pay the most attention to tasks which appear on this way.
+</p>
+<p><strong>PERT Diagram</strong> is a more realistic approach of a project's time estimate analysis. After PERT chart was constructed user can discover the shortest possible duration for entire project timescale. The <strong>project timeline</strong> is the longest chain that might be taken with connected tasks on the <strong>PERT Diagram</strong>. Completion of serial tasks need to be accomplished in a presented order. At a project timeline can be independent tasks that not linked with main sequence they are called parallel tasks. PERT diagram is  more suitable for Critical Path Analysis than Gantt chart for the reason that it undoubtedly better figure task dependencies. Project managers customarily utilize both methodologies.</p>
+<p>
+It should be considered that PERT diagram does not give you ready concrete decisions but it helps you to find these decisions.
+</p>
+<p>
+PERT diagram is constructed by definite rules. It represents the set of tasks, connected between each other in the consecution of their execution.
+</p>
+<div><a href="./Program Evaluation and Review Technique (PERT)_files/Program-Evaluation-and-Review-Technique-PERT-with-ConceptDraw-PRO.png"><img src="./Program Evaluation and Review Technique (PERT)_files/Program-Evaluation-and-Review-Technique-PERT-with-ConceptDraw-PRO.png" alt="Program Evaluation and Review Technique (PERT) with ConceptDraw DIAGRAM title=" program="" evaluation="" and="" review="" technique="" (pert)="" with="" conceptdraw="" diagram=""></a></div><br>
+<p>PERT benefits:</p>
+<ul>
+<li>With a PERT method users can decide how to split project phases and choose the tasks' specification and dispose relations between them.
+</li><li>Different contractors involved in the project can coordinate the work on their tasks.
+</li><li>PERT determines schedule based on the availability of resources assigned to project tasks.
+</li><li>Decrease completion time of different tasks or supposed additional actions.
+</li><li>PERT utilizes resources within flexibility for implementing a thrift.
+</li><li>Attracting more management attention to critical stages of the project.
+</li></ul>
+<p>
+There are two variants of PERT diagram construction. In the first variant the duration is denoted on arrow connecting diagram nodes. Such diagram type is called AOA (activity on arrow).
+</p>
+<p>
+The second type of PERT diagram is called AON (activity on node). In such diagram the information about the task duration is denoted in the diagram node and each task is represented in the form of rectangle with the definite set of fields. These are the task name, duration, early and late starts and early and late finishes of the task and also the float for execution of the given task.
+</p>
+
+<p align="center"><img src="./Program Evaluation and Review Technique (PERT)_files/PERT-Task.jpg" alt="Program Evaluation and Review Technique(PERT) Diagram"></p>
+<p align="center"><b>Pic 1.</b> PERT Diagram — AON (activity on node)</p>
+<p>
+With the help of ConceptDraw you can build diagrams of any type, but we recommend you using of AON variant, because such diagram type is easier for building and perception.
+</p>
+<p>
+PERT diagram starts from the task which does not have duration and does not use resources and presents just a project start. This is done to denote the common start of the project as starting from the first day of the project several tasks are starting simultaneously. Analogously PERT diagram finishes with the task “finish”.
+</p>
+
+<p align="center"><img src="./Program Evaluation and Review Technique (PERT)_files/PERT-Start.jpg" border="0" alt="Program Evaluation and Review Technique - Start"></p>
+<p align="center"><b>Pic 2.</b> PERT Diagram</p>
+<p>
+No task is able to start before the preceding task is finished. Also each task may represent a separate project with its subtasks, which can be displayed on a separate diagram. In ConceptDraw this can be realized in the form of hyperlinks assigned to such tasks. These hyperlinks may point at some pages of your ConceptDraw document where the corresponding PERT diagrams are placed.
+</p>
+
+<p align="center"><img src="./Program Evaluation and Review Technique (PERT)_files/PERT-Link.jpg" border="0" alt="Program Evaluation and Review Technique - Link"></p>
+<p align="center"><b>Pic 3.</b> PERT Diagram — Task</p>
+<p>
+Objects for PERT diagrams building are gathered in a separate ConceptDraw objects library.
+To start working it is enough to launch PERT Chart template from ConceptDraw STORE.
+</p>
+
+
+<p>
+To create a PERT diagram with ConceptDraw, it is enough to drag on a document page the number of ready objects, representing tasks, and then connect them between each other and fill out necessary task fields.
+</p>
+
+<p align="center"><img src="./Program Evaluation and Review Technique (PERT)_files/PERT-Diagram.jpg" border="0" alt="Program Evaluation and Review Technique Diagram"></p>
+<p align="center"><b>Pic 4.</b> PERT Diagram with ConceptDraw</p>
+<p>
+However, a Gantt chart gives more information than PERT diagram, and that assume to expand the information on it:</p>
+<ul>
+<li>activity name
+</li><li>normal duration time
+</li><li>early start time (ES)
+</li><li>early finish time (EF)
+</li><li>late start time (LS)
+</li><li>late finish time (LF)
+</li><li>slack
+</li></ul>
+<p>
+Task appeared on the calculated critical path are marked out with red color. This way any person is able to see at once tasks which require special attention.
+</p>
+
+<p align="center"><img src="./Program Evaluation and Review Technique (PERT)_files/PERT-Red-Diagram.jpg" alt="Program Evaluation and Review Technique - Critical Path" border="0"></p>
+
+<p align="center"><b>Pic 5.</b> PERT Diagram — Critical Path</p>
+
+<p>ConceptDraw PERT diagram software works across any platform, meaning you never have to worry about compatibility again. ConceptDraw DIAGRAM allows you to make PERT diagram on PC or macOS operating systems.</p>
+
+<p>The samples you see on this page were created in ConceptDraw DIAGRAM using the <a href="https://www.conceptdraw.com/solution-park/management-seven-mp-tools">Seven Management and Planning Tools solution</a>, and demonstrate the solution's capabilities and the results you can achieve using this solution.</p>
+
+
+
+<p><a href="./Program Evaluation and Review Technique (PERT)_files/Seven-Management-and-Planning-Tools-solution.png"><img src="./Program Evaluation and Review Technique (PERT)_files/Seven-Management-and-Planning-Tools-solution.png" alt="Seven Management and Planning Tools solution" title="Seven Management and Planning Tools solution"></a></p>
+</td></tr></tbody></table>                    <a href="./Program Evaluation and Review Technique (PERT)_files/pert-diagram.png" target="_blank">
+                        <img src="./Program Evaluation and Review Technique (PERT)_files/pert-diagram.png" alt="Program Evaluation and Review Technique &lt;br&gt;(PERT) with ConceptDraw DIAGRAM  *">
+                    </a>
+                <p align="center"><b>Pic 6.</b> Program Evaluation and Review Technique (PERT) Diagram — Software Development Plan</p>
+
+<p> The following features make ConceptDraw DIAGRAM the best Program Evaluation and Review Technique (PERT) Diagram Software:
+</p><ol class="normal">
+<li>You don't need to be an artist to draw professional looking diagrams in a few minutes.
+</li><li>Large quantity of ready-to-use vector objects makes your drawing diagrams quick and easy.
+</li><li>Great number of predesigned templates and samples give you the good start for your own diagrams.
+</li><li>ConceptDraw DIAGRAM provides you the possibility to use the grid, rules and guides. You can easily rotate, group, align, arrange the objects, use different fonts and colors to make your diagram exceptionally looking.
+</li><li>All ConceptDraw DIAGRAM documents are vector graphic files and are available for reviewing, modifying, and converting to a variety of formats: image, HTML, PDF file, MS PowerPoint Presentation, Adobe Flash, MS Visio.
+</li><li>Using ConceptDraw STORE you can navigate through ConceptDraw Solution Park, managing downloads and updates. You can access libraries, templates and samples directly from the ConceptDraw STORE.
+</li><li>If you have any questions, our free of charge support is always ready to come to your aid.
+</li>
+</ol>
+<p></p>
+<!-- Futer -->
+<br><br><br>
+                                <div id="SA_">		                    <h4>TEN RELATED HOW TO's:</h4><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/network-analysis-activity-on-node">Network Analysis Activity on Node</a>&nbsp;→</h3><span>This sample shows the activity on node (AON) network. The social network analysis (SNA) is the analysis of the social networks, it analyzes the social relationships in terms of network theory that uses nodes and ties. The nodes represent the activities and are displayed as circles labeled with the activity number and completion time in brackets. The nodes are sequentially connected, the ties are represented as lines.</span><img src="./Program Evaluation and Review Technique (PERT)_files/network-analysis-activity-on-node.png" alt="Network Analysis Activity on Node *"><div class="pic">Picture: Network Analysis Activity on Node</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/computer-and-networks" class="button now light left noltrspcng">Computer Network Diagrams</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/applications-uml">Software and Database Design with ConceptDraw DIAGRAM </a>&nbsp;→</h3><span>Using diagrams, you can visualize the flow of the information or build a detailed data structure. There's no need to have a degree in software and database design with ConceptDraw DIAGRAM , because this software has all the tools needed in developing models and diagrams. Project planning, designing and prototyping was never so easy.
+This UML diagrams can be used to visualize a model of the data base development process. A UML diagram shows a graphical view of a structure of software system: components and relationships.
+Using Unified Modeling Language helps to depict logical and physical elements of a data base, visually represent requirements and sub-systems. UML diagrams allows developers to organize and predict critical issues, as well as collaborate data base information.</span><img src="./Program Evaluation and Review Technique (PERT)_files/Data-flow-sample.png" alt="Software and Database Design with ConceptDraw DIAGRAM  *"><div class="pic">Picture: Software and Database Design with ConceptDraw DIAGRAM </div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/software-uml" class="button now light left noltrspcng">Rapid UML</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/business-diagrams">Business Diagram Software</a>&nbsp;→</h3><span>Any business process consists from a number of tasks carrying out the certain business goal. It is useful to diagram business processes to ensure that they are as foolproof, logical and sequential as possible. This business process diagram describes a typical booking process flow by the example of a cab booking process. It can be used as a roadmap for any booking system implementation. Diagramming a business process allows you to look at the entire project and take into account all types of possible scenarios. Business process diagram helps you investigate and clarify the process thoroughly so that you can find out how it can be improved. Business process diagram supports team communications by ensuring that each process element is clear and everyone in the team is on the same page.
+Sometimes your company brings you less profit than you expect it to be, and it’s difficult to reveal the causes. Maybe it’s time to learn new technologies, because business diagram are easily developed by means of special software, so you won’t make any extra effort. In return, you will increase your productivity and get more done in a less time.</span><img src="./Program Evaluation and Review Technique (PERT)_files/Business-Flowchart.png" alt="Business Diagram Software *"><div class="pic">Picture: Business Diagram Software</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solutions:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/business-process-diagram" class="button now light left noltrspcng">Business Process Diagrams</a><a target="_blank" href="https://www.conceptdraw.com/solution-park/business-process" class="button now light left noltrspcng">Business Processes</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/dfd-flowchart-symbols">DFD Flowchart Symbols</a>&nbsp;→</h3><span>A Data Flow Diagram (DFD) is a graphical technique which allows effectively model and analyze the information processes and systems. The ability to fast and easy create the DFDs is made possible with Data Flow Diagrams solution from the Software Development area of ConceptDraw Solution Park. For designing the Data Flow Diagrams are used simple DFD flowchart symbols which are connected each other by arrows depicting the data flow from one step to another.</span><img src="./Program Evaluation and Review Technique (PERT)_files/DataFlow-Diagram-Symbols.png" alt="DFD Flowchart Symbols *"><div class="pic">Picture: DFD Flowchart Symbols</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/software-DFD" class="button now light left noltrspcng">Data Flow Diagrams (DFD)</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/epc-business-processes-in-terms-of-workflows">EPC - Business Processes in Terms of Work Flows</a>&nbsp;→</h3><span>The Event-driven Process Chain ( EPC ) Diagrams allows users to present business process models in terms of work flows.
+
+The EPC diagram can shows various vayes how to reach positive company performance.</span><img src="./Program Evaluation and Review Technique (PERT)_files/EPC-diagram-Design-elements.png" alt="EPC - Business Processes in Terms of Work Flows *"><div class="pic">Picture: EPC - Business Processes in Terms of Work Flows</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/business-process-EPC" class="button now light left noltrspcng">Event-driven Process Chain Diagrams</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/flowchart-programming-project">Flowchart Programming Project. Flowchart Examples</a>&nbsp;→</h3><span>Flowcharts can be used in designing and documenting both simple and complex processes or programs and, similar to the other types of diagrams, they can help visualize what happens and so help understand some definite process, and, as a result, find flaws, bottlenecks and other features within it.</span><img src="./Program Evaluation and Review Technique (PERT)_files/flowchart-programming-project.png" alt="Flowchart Programming Project"><div class="pic">Picture: Flowchart Programming Project. Flowchart Examples</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/business-process-cross-functional-flowcharts" class="button now light left noltrspcng">Cross-Functional Flowcharts</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/data-flow-diagram-software">Data Flow Diagram Software</a>&nbsp;→</h3><span>When studying a business process or system involving the transfer of data, it is common to use a Data Flow Diagram (DFD) to visualize how data are processed. Being initially used exclusively in regards to the flow of data through a computer system, now DFDs are employed as the business modeling tools. They are applied to describe the business events and interactions, or physical systems involving data storage and transfer. ConceptDraw DIAGRAM is a powerful Data Flow Diagram software thanks to the Data Flow Diagrams solution from the Software Development area of ConceptDraw Solution Park.</span><img src="./Program Evaluation and Review Technique (PERT)_files/DFD-in-ConceptDraw.png" alt="Data Flow Diagram Software *"><div class="pic">Picture: Data Flow Diagram Software</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/software-DFD" class="button now light left noltrspcng">Data Flow Diagrams (DFD)</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/sdl-flowchart-symbols">SDL Flowchart Symbols</a>&nbsp;→</h3><span>Drawing the diagrams we try to find in help the powerful software and now we have the ConceptDraw DIAGRAM. The ability easily create the SDL diagrams is made possible thanks to unique Specification and Description Language (SDL) Solution from the Industrial Engineering Area of ConceptDraw Solution Park. This solution extends ConceptDraw DIAGRAM 2 libraries - SDL Connectors and SDL Diagrams that contain 70 predesigned SDL flowchart symbols.</span><img src="./Program Evaluation and Review Technique (PERT)_files/SDL-Flowchart-symbols.png" alt="SDL Flowchart Symbols *"><div class="pic">Picture: SDL Flowchart Symbols</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/engineering-sdl" class="button now light left noltrspcng">Specification and Description Language (SDL)</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/pie-chart-software">Pie Chart Software</a>&nbsp;→</h3><span>A pie chart is a circular diagram showing a set of data divided into proportional slices. There are several variations of this chart such as donut chart, exploded pie chart, multi-level pie charts. Although it is not very informative when a ring chart or circle chart has many sections, so choosing a low number of data points is quite important for a useful pie chart.
+ConceptDraw DIAGRAM software with Pie Charts solution helps to create pie and donut charts for effective displaying proportions in statistics, business and mass media for composition comparison, i.e. for visualization of part percentage inside one total.</span><img src="./Program Evaluation and Review Technique (PERT)_files/Percentage-pie-chart-DA-determinations.png" alt="Pie Chart Software"><div class="pic">Picture: Pie Chart Software</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/charts-pie" class="button now light left noltrspcng">Pie Charts</a></div></div><div class="grid_w txt_left s_mt_20"><h3><a href="https://www.conceptdraw.com/How-To-Guide/diagram-software-easy-flowchart-program">Easy Flowchart Program and Standard Flowchart Symbols</a>&nbsp;→</h3><span>Fast visualization of structured data is main capability of the ConceptDraw DIAGRAM. With numerous vector stencils and standard flowchart symbols from object libraries and the RapidDraw technology this program stands as the best professional flowchart software for drawing with type of flowchart symbols. ConceptDraw DIAGRAM also known as best flowchart maker.</span><img src="./Program Evaluation and Review Technique (PERT)_files/Flow-chart--Planning-process.png" alt="Easy Flowchart Program and Standard Flowchart Symbols *"><div class="pic">Picture: Easy Flowchart Program and Standard Flowchart Symbols</div><div class="grid_w rltdslt s_mt_20 s_mb_10">Related Solution:</div> <div class="grid_w rltdslt"><a target="_blank" href="https://www.conceptdraw.com/solution-park/diagram-flowcharts" class="button now light left noltrspcng">Flowcharts</a></div></div>                </div>
+
+                <div class="grid_w s_mt_50 left">
+                    <div class="grid_2 center">
+                        <div class="s_mb_20 grid_w">
+                                                            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M49.48 13.4L61.2 29.26H17.9L29.63 13.4h19.85zm-1.8-2.43L39.56 0l-8.12 10.97h16.24zM32.9 73.14h13.42V31.7h-13.4v41.44zm-2.43 0H17V31.7h13.47v41.44zm18.3 0H62.1V31.7H48.76v41.44z" fill="#000" fill-rule="evenodd"></path>
+                            </svg>                                <div class="word1">ConceptDraw</div> <div class="word2">DIAGRAM 15</div>                        </div>
+                        <div class="grid_2 s_mb_70">
+                            <a href="https://my.conceptdraw.com/buy/catalog.php" class="button dark txtBig buy">Buy it Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftCol">
+                <!--<h5>Related How To's</h5>
+                <ul><li><a href="https://www.conceptdraw.com/How-To-Guide/network-analysis-activity-on-node">Network Analysis Activity on Node</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/applications-uml">Software and Database Design with ConceptDraw DIAGRAM </a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/business-diagrams">Business Diagram Software</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/dfd-flowchart-symbols">DFD Flowchart Symbols</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/epc-business-processes-in-terms-of-workflows">EPC - Business Processes in Terms of Work Flows</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/flowchart-programming-project">Flowchart Programming Project. Flowchart Examples</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/data-flow-diagram-software">Data Flow Diagram Software</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/sdl-flowchart-symbols">SDL Flowchart Symbols</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/pie-chart-software">Pie Chart Software</a></li><li><a href="https://www.conceptdraw.com/How-To-Guide/diagram-software-easy-flowchart-program">Easy Flowchart Program and Standard Flowchart Symbols</a></li></ul> -->
+            </div>
+
+
+        </div>
+    </div>
+
+        <div id="see_also" style="display: table;width: 100%;">
+        <div style="margin: 2em auto;" class="multy-col-list-wrapper">
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+        <div id="footer" role="contentinfo">
+            <div class="footer_links_left">	<p>CS Odessa</p> Plan. Do. Communicate.</div>
+            <div class="footer_links_right">
+                <a class="foo_links" href="https://www.conceptdraw.com/products/contact-us">Contact Us</a>
+                <p> © 1993 — 2022 CS Odessa Corp. </p>
+            </div>
+        </div>
+    </footer>
+     
+    
+    
+
+    </body></html>

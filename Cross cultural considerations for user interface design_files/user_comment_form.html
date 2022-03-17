@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)https://www.humanfactors.com/forms/user_comment_form.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="./style(1).css">
+<script type="text/javascript" src="./jquery.min(1).js"></script> 
+<script type="text/javascript" src="./jquery.validate.min(1).js"></script> 
+<script type="text/javascript" src="./script(1).js"></script> 
+<script type="text/javascript">
+
+$(function(){
+
+$( "#submitComment" ).click(function() {
+
+  $("#userCommentForm").validate();
+
+  
+
+	  $('.fName').each(function() {
+
+		$(this).rules('add', {
+
+			required: true,
+
+			messages: {required:  "Please enter first name"}
+
+		     });
+
+	   });
+
+	   
+
+	    $('.lName').each(function() {
+
+		$(this).rules('add', {
+
+			required: true,
+
+			messages: {required:  "Please enter last name"}
+
+		     });
+
+	   });
+
+	   
+
+	   $('.email').each(function() {
+
+		$(this).rules('add', {
+
+			required: true,
+
+			email: true,
+
+			messages: {required:  "Please enter your email"}
+
+		     });
+
+	   });
+
+	   
+
+	   $('.phone').each(function() {
+
+		$(this).rules('add', {
+
+			required: true,
+
+			messages: {required:  "Please enter a phone number"}
+
+		     });
+
+	   });
+
+	   
+
+	 
+
+		$('.comment').rules('add', {
+
+			required: true,
+
+			messages: {required:  "Please enter your comment"}
+
+		 
+
+	   });
+
+});
+
+});
+
+
+
+</script>
+<!--<form id="userCommentForm" action="https://info.humanfactors.com/acton/eform/4167/008a/d-ext-0002">
+  <div class="form commentForm">
+    <div class="row clearfix">
+      <label class="labelW140">First name </label>
+      <input type="text"  name="First Name" class="fName w300p">
+    </div>
+    <div class="row clearfix">
+      <label class="labelW140">Last name </label>
+      <input type="text" name="Last Name" class="lName w300p">
+    </div>
+    <div class="row clearfix mB40">
+      <label class="labelW140">Email address</label>
+      <input type="text" name="Email" class="email w300p">
+    </div>
+    <div class="row clearfix">
+      <label class="labelW140">Comments </label>
+      <textarea rows="5" cols="40" class="comment" name="Comment"></textarea>
+    </div>
+    <input type="hidden" name="Lead Source" value="user comment form">
+    <div class="row clearfix mB0">
+      <label class="labelW140">&nbsp;</label>
+      <input type="submit" class="button button-primary button-small" value="Submit" id="submitComment">
+    </div>
+  </div>
+</form>-->
+
+
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0069)https://www.humanfactors.com/forms/subscribe_to_newsletters_form.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>Untitled Document</title>
+
+</head>
+
+
+
+<body>
+
+
+
+<link rel="stylesheet" href="./style(1).css">
+
+<style>label.error{padding:10px 0 0!important;}</style>
+
+<script type="text/javascript" src="./script(1).js"></script>
+
+<script type="text/javascript" src="./jquery.min(1).js"></script> 
+
+<script type="text/javascript" src="./jquery.validate.min(1).js"></script> 
+
+
+    
+   
+    <form id="NewsletterSignUp" method="post" action="https://info.humanfactors.com/acton/eform/4167/0099/d-ext-0001">
+    <div class="form">
+    
+      <div class="clearfix ">
+        <label class="labelW140">Enter your email</label>
+        
+      </div>
+      
+      <div class="row clearfix mB20">
+        
+        <input type="text" class="email wP100" id="email" name="Email">
+      </div>
+	  
+	 <input type="hidden" name="Lead Source" value="Newsletter Signup">
+
+            <div class="clearfix">
+        <input type="submit" class="button button-primary button-small" value="Sign up" id="signup" onclick="getEmail();">
+      </div>
+    </div>
+    </form>
+
+  
+<script type="text/javascript">
+  
+$( "#signup" ).click(function() {
+  $("#NewsletterSignUp").validate();
+     
+	   $('.email').each(function() {
+		$(this).rules('add', {
+			required: true,
+			messages: {required:  "Please enter your email"}
+		     });
+	   });
+	 
+});
+
+ function getEmail()
+   {
+	  var email = document.getElementById('email').value ;
+	  document.getElementById('userEmail').innerHTML = email;  ;
+   }
+</script>
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
